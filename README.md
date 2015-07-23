@@ -1176,14 +1176,14 @@
     }
     ```
 
-  - [17.2](#17.2) <a name='17.2'></a> Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment.
+  - [17.2](#17.2) <a name='17.2'></a> Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment. Capitalize the first letter and use complete sentences. Focus on explaining "why" you are doing something and not "what" you are doing - the "what" part should be apparent by looking at the code.
 
     ```javascript
     // bad
     const active = true;  // is current tab
 
     // good
-    // is current tab
+    // The current tab.
     const active = true;
 
     // bad
@@ -1199,7 +1199,7 @@
     function getType() {
       console.log('fetching type...');
 
-      // set the default type to 'no type'
+      // Setting the default type to 'no type' because that is the default server side value.
       const type = this._type || 'no type';
 
       return type;
